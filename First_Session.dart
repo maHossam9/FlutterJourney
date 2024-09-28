@@ -1,3 +1,4 @@
+//Exercise1
 void Swapping(var a,var b){
   print("Values before swapping is \n\n first variable : $a\n\nSecond variable is : $b\n\n");
   var temp;
@@ -6,6 +7,7 @@ void Swapping(var a,var b){
   b=temp;
   print("Values after swapping is \n\n first variable : $a\n\nSecond variable is : $b\n\n");
 }
+//Exercise2
 void checker(List<int> numbers){
   int len=numbers.length;
   
@@ -18,6 +20,7 @@ void checker(List<int> numbers){
       print(numbers[i].toString()+" is Odd");
   }
 }
+//Exercise3
 void largest(List<int> mylist){
   int largestNum=0;
   int len=mylist.length;
@@ -28,6 +31,7 @@ void largest(List<int> mylist){
   }
   print(largestNum);
 }
+//Exercise4
 void PrintOdd(List<int> mylst){
   int len=mylst.length;
   for (int i=0;i<len;i++){
@@ -37,6 +41,7 @@ void PrintOdd(List<int> mylst){
    continue;
   }
 }
+//Exercise5
 void Lessthanfive(List<int>nums){
   int len=nums.length;
   for (int i=0;i<len;i++){
@@ -58,6 +63,7 @@ void Lessthanfive(List<int>nums){
     
   }
 }*/
+//Exercise6
 List<int> Common(List<int>L1,List<int>L2){
   L1=L1.toSet().toList();
   L2=L2.toSet().toList();
@@ -73,6 +79,7 @@ List<int> Common(List<int>L1,List<int>L2){
   }
   return CommonList;
 }
+//Exercise7
 List<int> EvenList(List<int>Nums){
   int len=Nums.length;
   List<int> Even=[];
@@ -83,6 +90,7 @@ List<int> EvenList(List<int>Nums){
   }
   return Even;
 }
+
 void main(){
   var x="Hi";
   var y="Hello";
@@ -91,16 +99,23 @@ void main(){
   List<int> b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
   List<int>NewList=EvenList(b);
   for(int i=0;i<NewList.length;i++){
+    //Exercise7
     print(NewList[i]);
   }
   List<int>CommList=Common(a,b);
   for(int i=0;i<CommList.length;i++){
+    //Exercise6
     print(CommList[i]);
   }
+  //Exercise1
   Swapping(x,y);
+  //Exercise2
   checker(lis);
+  //Exercise3
   largest(lis);
+  //Exercise4
   PrintOdd(lis);
+  //Exercise5
   Lessthanfive(lis);
   
 }
