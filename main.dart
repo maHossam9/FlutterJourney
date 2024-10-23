@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
-import 'ProdDisplay.dart';
-import 'UserProfile.dart';
+import 'package:session_6/AnimationZooming.dart';
+import 'Reveal.dart';
 
-
-
-void main(){
-
-
-  runApp(
-      const MaterialApp(
-          home:first_app()));
+void main() {
+  runApp(const Reveal());
 }
+
